@@ -109,7 +109,7 @@ public class Fraction {
 			 addition.numerator = (this.numerator*f.denominator) + (this.denominator*f.numerator);
 			 addition.denominator = this.denominator*f.denominator ;
 		 }
-		 
+	         addition.reduce();
 		return addition;
 	}
 	/**
