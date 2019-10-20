@@ -175,7 +175,15 @@ public class Fraction {
 	 * 		   0 otherwise. 
 	 */
 	public int compareTo(Fraction f) {
-		return 0;
+		if((f.numerator/f.denominator) > (this.numerator/this.denominator)) {
+			return -1;
+		}
+		else if ((f.numerator/f.denominator) < (this.numerator/this.denominator)) {
+			return 1;
+		}
+		else {
+			return 0;
+		}
 	}
 	
 	/**
