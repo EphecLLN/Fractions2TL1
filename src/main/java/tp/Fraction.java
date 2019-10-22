@@ -189,7 +189,12 @@ public class Fraction {
 	 * @return true if the fraction is proper, i.e. its absolute value is strictly less than 1
 	 */
 	public boolean isProperFraction() {
-		return true;
+		if (this.numerator < this.denominator) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	/**
 	 * 
