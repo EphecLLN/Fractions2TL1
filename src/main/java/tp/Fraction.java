@@ -156,7 +156,13 @@ public class Fraction {
 	 * @return true if the current fraction is strictly less than 0
 	 */
 	public boolean isNegative() {
-		return false;
+		if ((this.getNumerator() < 0 && this.getDenominator() > 0) || (this.getNumerator() > 0 && this.getDenominator() < 0) ) {
+			return true;
+	}
+		else {
+			return false;
+		}
+		
 	}
 	
 	/**
