@@ -18,6 +18,8 @@ public class Fraction {
 	 */
 	public Fraction() {
 		super();
+		numerator = 0; 
+		denominator = 1;
 	}
 	/**
 	 * @param numerator 
