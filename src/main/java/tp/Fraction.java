@@ -28,8 +28,6 @@ public class Fraction {
 	 */
 	public Fraction(int numerator, int denominator) {
 		super();
-		this.numerator = numerator;
-		this.denominator = denominator;
 	}
 	
 	/**
@@ -156,13 +154,7 @@ public class Fraction {
 	 * @return true if the current fraction is strictly less than 0
 	 */
 	public boolean isNegative() {
-		if ((this.getNumerator() < 0 && this.getDenominator() > 0) || (this.getNumerator() > 0 && this.getDenominator() < 0) ) {
-			return true;
-	}
-		else {
-			return false;
-		}
-		
+		return false;
 	}
 	
 	/**
@@ -211,7 +203,7 @@ public class Fraction {
 	 * @return the decimal value of the fraction
 	 */
 	public double toDouble() {
-		return (double) this.getNumerator() / (double) this.getDenominator();
+		return 0.0;
 	}
 	
 	/**
