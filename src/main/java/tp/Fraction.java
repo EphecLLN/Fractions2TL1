@@ -182,7 +182,11 @@ public class Fraction {
 	 * @return true if the current fraction is a unit fraction, i.e. its numerator is 1 in its reduced form
 	 */
 	public boolean isUnitFraction() {
-		return false;
+		if(getNumerator() == getDenominator()) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 	/**
 	 * 
