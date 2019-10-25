@@ -202,8 +202,8 @@ public class Fraction {
 	/**
 	 * @return the decimal value of the fraction
 	 */
-	public double toDouble() {
-		return 0.0;
+	public double toDouble() {		
+		return (double) this.getNumerator() / (double) this.getDenominator();
 	}
 	
 	/**
