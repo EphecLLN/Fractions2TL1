@@ -172,7 +172,12 @@ public class Fraction {
 	 * @return true if f and the current fraction have the same value
 	 */
 	public boolean equals(Object f) {
-		return false;
+		if((f.numerator/f.denominator) === (this.numerator/this.denominator)) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	
 	
