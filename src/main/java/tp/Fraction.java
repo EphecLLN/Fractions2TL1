@@ -66,7 +66,13 @@ public class Fraction {
 	 * @param denominator the denominator to set, must be non zero. 
 	 */
 	public void setDenominator(int denominator) {
+		if (denominator == 0) {
+			
+		}
+		else {
 		this.denominator = denominator;
+		this.reduce();
+		}
 	}
 	/**
 	 * Convert the fraction to its reduced form.  In case of a negative fraction, 
