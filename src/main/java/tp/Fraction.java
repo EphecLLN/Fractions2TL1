@@ -30,16 +30,6 @@ public class Fraction {
 		super();
 		this.numerator = numerator;
 		this.denominator = denominator;
-		
-		try {
-			if(denominator != 0) {
-				double answer = numerator / denominator;
-				System.out.println(answer);
-			}
-		} catch (Exception e) {
-			System.out.println("Denominator can't be 0");
-		}
-		
 	}
 	
 	/**
