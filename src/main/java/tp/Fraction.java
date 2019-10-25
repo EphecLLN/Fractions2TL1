@@ -101,7 +101,16 @@ public class Fraction {
 	 * @return a new fraction which is the sum of f and the current fraction, in its reduced form. 
 	 */
 	public Fraction add(Fraction f) {
-		return null;
+		Fraction addition = new Fraction();
+		if (this.denominator == f.denominator) {
+			addition.numerator = this.numerator + f.numerator;
+			addition.denominator = this.denominator;
+		} else {
+			addition.numerator = (this.numerator * f.denominator) + (this.denominator * f.numerator);
+			addition.denominator = this.denominator * f.denominator;
+		}
+		addition.reduce();
+		return addition;
 	}
 	/**
 	 * Computes the difference of two fractions.  Operands are left unmodified. 
