@@ -28,8 +28,6 @@ public class Fraction {
 	 */
 	public Fraction(int numerator, int denominator) {
 		super();
-		this.numerator = numerator;
-		this.denominator = denominator;
 	}
 	
 	/**
