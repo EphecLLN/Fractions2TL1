@@ -154,7 +154,7 @@ public class Fraction {
 	 * @return true if the current fraction is strictly less than 0
 	 */
 	public boolean isNegative() {
-		return false;
+		return (numerator/denominateur)<0;
 	}
 	
 	/**
