@@ -73,6 +73,13 @@ public class Fraction {
 	 * the numerator must be positive and the denominator must be negative. 
 	 */
 	private void reduce() {
+		if(this.numerator % this.denominator == 0) {
+			Fraction(this.numerator, this.denominator);
+		}else {
+			int gcd = Fraction(this.denominator, this.numerator % this.denominator);
+			this.numerator /= gcd;
+			this.denominator /= gcd;
+		}
 		
 	}
 	/**
