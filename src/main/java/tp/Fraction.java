@@ -140,12 +140,7 @@ public class Fraction {
 	 * @return true if the current fraction is equals to zero
 	 */
 	public boolean isZero() {
-		if(numerator == 0) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return this.numerator == 0;
 	}
 	
 
