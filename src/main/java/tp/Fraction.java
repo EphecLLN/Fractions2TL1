@@ -66,7 +66,7 @@ public class Fraction {
 	 * @param denominator the denominator to set, must be non zero. 
 	 */
 	public void setDenominator(int denominator) {
-		
+		this.denominator = denominator;
 	}
 	/**
 	 * Convert the fraction to its reduced form.  In case of a negative fraction, 
