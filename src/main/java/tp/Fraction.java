@@ -28,6 +28,18 @@ public class Fraction {
 	 */
 	public Fraction(int numerator, int denominator) {
 		super();
+		this.numerator = numerator;
+		this.denominator = denominator;
+		
+		try {
+			if(denominator != 0) {
+				double answer = numerator / denominator;
+				System.out.println(answer);
+			}
+		} catch (Exception e) {
+			System.out.println("Denominator can't be 0");
+		}
+		
 	}
 	
 	/**
@@ -73,6 +85,13 @@ public class Fraction {
 	 * the numerator must be positive and the denominator must be negative. 
 	 */
 	private void reduce() {
+		if(this.numerator % this.denominator == 0) {
+			Fraction(this.numerator, this.denominator);
+		}else {
+			int gcd = Fraction(this.denominator, this.numerator % this.denominator);
+			this.numerator /= gcd;
+			this.denominator /= gcd;
+		}
 		
 	}
 	/**
