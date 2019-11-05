@@ -81,7 +81,7 @@ public class Fraction {
 	 */
 	
 	public String toString() {
-		return "Fraction []";
+		return "";
 	}
 	
 	/**
@@ -203,7 +203,9 @@ public class Fraction {
 	 * @return the decimal value of the fraction
 	 */
 	public double toDouble() {
-		return 0.0;
+		double num = this.numerator;
+		double den = this.denominator;
+		return num/den;
 	}
 	
 	/**
