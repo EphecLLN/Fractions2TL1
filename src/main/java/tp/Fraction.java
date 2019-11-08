@@ -163,7 +163,8 @@ public class Fraction {
 	 * @return true if the current fraction is strictly less than 0
 	 */
 	public boolean isNegative() {
-		return false;
+		double result = numerator/denominator;
+		return (denominator == 0 || result < 0)? true:false;
 	}
 	
 	/**
